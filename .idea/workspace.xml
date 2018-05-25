@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564efe3-c48c-4ceb-b5b2-ed7ff3a9bd9c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/js/masker.js" afterPath="$PROJECT_DIR$/js/masker.js" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
       <change beforePath="$PROJECT_DIR$/payment_page_files/66271719.css" afterPath="$PROJECT_DIR$/payment_page_files/66271719.css" />
     </list>
@@ -19,8 +19,18 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+            <state relative-caret-position="295">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="masker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/masker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="197" column="16" lean-forward="false" selection-start-line="197" selection-start-column="16" selection-end-line="197" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -96,7 +106,6 @@
         <option value="$PROJECT_DIR$/css/reset.css" />
         <option value="$PROJECT_DIR$/js/shtrafy_js.js" />
         <option value="$PROJECT_DIR$/js/current_js.js" />
-        <option value="$PROJECT_DIR$/js/masker.js" />
         <option value="$PROJECT_DIR$/index_ya.html" />
         <option value="$PROJECT_DIR$/js/yandex.js" />
         <option value="$PROJECT_DIR$/logo_crawler.php" />
@@ -106,6 +115,7 @@
         <option value="$PROJECT_DIR$/payment_page_files/advantages.css" />
         <option value="$PROJECT_DIR$/payment_page_files/gibdd.css" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
+        <option value="$PROJECT_DIR$/js/masker.js" />
       </list>
     </option>
   </component>
@@ -217,7 +227,7 @@
       <workItem from="1526464285555" duration="4078000" />
       <workItem from="1527066812645" duration="14765000" />
       <workItem from="1527090613381" duration="3639000" />
-      <workItem from="1527170630749" duration="16393000" />
+      <workItem from="1527170630749" duration="16512000" />
     </task>
     <task id="LOCAL-00001" summary="Ready 2 test with gosoplata payment page">
       <created>1527245442684</created>
@@ -226,11 +236,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527245442684</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mask disabled">
+      <created>1527247223498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527247223498</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56527000" />
+    <option name="totallyTimeSpent" value="56646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="6" />
@@ -283,7 +300,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ready 2 test with gosoplata payment page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready 2 test with gosoplata payment page" />
+    <MESSAGE value="mask disabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="mask disabled" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -481,14 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/masker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4644">
-          <caret line="258" column="59" lean-forward="false" selection-start-line="258" selection-start-column="59" selection-end-line="258" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/shtrafy_js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -677,10 +687,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/masker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="197" column="16" lean-forward="false" selection-start-line="197" selection-start-column="16" selection-end-line="197" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+        <state relative-caret-position="295">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>

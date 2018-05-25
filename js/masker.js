@@ -190,10 +190,11 @@ var Masker = (function (modules) {
                     evt.preventDefault();
                 } else if (evt.metaKey || evt.ctrlKey || evt.keyCode === 9 || evt.keyCode === 13) {
                     return;
-                } else {
-                    evt.preventDefault();
-                    return;
                 }
+                // else {
+                //     evt.preventDefault();
+                //     return;
+                // }
                 rule = masker.mask(val, start, end, true);
                 el.value = rule.text;
                 el.setSelectionRange(rule.selectionStart, rule.selectionEnd, rule.selectionDirection);
