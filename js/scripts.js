@@ -57,21 +57,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // перекидываем каретку на ГГ когда заполнен ММ
-    $('#card_mm').addEventListener('keyup', function (e) {
+    $('#card_mm').addEventListener('keypress', function (e) {
         if (e.target.value.length === 2 && (new RegExp('[0-9]')).test(e.key)) {
             $('#card_yy').focus();
         }
     });
 
     // перекидываем каретку на CVC когда заполнен ГГ
-    $('#card_yy').addEventListener('keyup', function (e) {
+    $('#card_yy').addEventListener('keypress', function (e) {
         if (e.target.value.length === 2 && (new RegExp('[0-9]')).test(e.key)) {
             $('#card_cvc').focus();
         }
     });
 
     // фокус на сабмит после cvc
-    $('#card_cvc').addEventListener('keyup', function (e) {
+    $('#card_cvc').addEventListener('keypress', function (e) {
         if (e.target.value.length === 3 && (new RegExp('[0-9]')).test(e.key)) {
             $('#submit_btn').focus();
         }
