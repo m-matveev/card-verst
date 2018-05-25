@@ -113,9 +113,11 @@ var Masker = (function (modules) {
         }, _keydownListener: function _keydownListener() {
             var masker = this;
             return function EVENTS_KEYDOWN(evt) {
+                console.log(evt);
                 var el = evt.target, rule;
                 var start = el.selectionStart, end = el.selectionEnd, val = el.value;
                 if (evt.keyCode === 8) {
+                    console.log('key 8');
                     rule = masker.unmask(val, start, end);
                     start = rule.selectionStart;
                     end = rule.selectionEnd;
@@ -128,6 +130,7 @@ var Masker = (function (modules) {
                     end = start;
                     evt.preventDefault();
                 } else if (masker.filter(evt.key)) {
+                    console.log('main code');
                     rule = masker.unmask(val, start, end);
                     if (rule.text.length < masker.masks[masker.masks.length - 1].length || rule.selectionStart !== rule.selectionEnd) {
                         start = rule.selectionStart;
@@ -143,6 +146,7 @@ var Masker = (function (modules) {
                     }
                     evt.preventDefault();
                 } else if (evt.keyCode === 38 || (evt.metaKey && evt.keyCode === 37)) {
+                    console.log('key 38 or 37');
                     if (evt.shiftKey) {
                         return;
                     }
@@ -150,6 +154,7 @@ var Masker = (function (modules) {
                     end = start;
                     evt.preventDefault();
                 } else if (evt.keyCode === 40 || (evt.metaKey && evt.keyCode === 39)) {
+                    console.log('key 40 39');
                     if (evt.shiftKey) {
                         return;
                     }
@@ -157,6 +162,7 @@ var Masker = (function (modules) {
                     end = start;
                     evt.preventDefault();
                 } else if (evt.keyCode === 37) {
+                    console.log('key 37');
                     if (evt.shiftKey) {
                         return;
                     }
@@ -173,6 +179,7 @@ var Masker = (function (modules) {
                     }
                     evt.preventDefault();
                 } else if (evt.keyCode === 39) {
+                    console.log('key 39');
                     if (evt.shiftKey) {
                         return;
                     }
@@ -188,16 +195,26 @@ var Masker = (function (modules) {
                         end = start;
                     }
                     evt.preventDefault();
-                } else if (evt.metaKey || evt.ctrlKey || evt.keyCode === 9 || evt.keyCode === 13) {
-                    return;
+                } 
+                
+                else if (evt.metaKey || evt.ctrlKey || evt.keyCode === 9 || evt.keyCode === 13) {
+                    console.log('key enter');
+                    return true;
                 }
-                // else {
-                //     evt.preventDefault();
-                //     return;
-                // }
+                 else {
+                     evt.preventDefault();
+                     return;
+                }
                 rule = masker.mask(val, start, end, true);
                 el.value = rule.text;
-                el.setSelectionRange(rule.selectionStart, rule.selectionEnd, rule.selectionDirection);
+                // fix for safari
+                el.style.display = 'none';
+                el.style.display = 'block';
+                console.log(rule);
+                setTimeout(function(){
+                    el.setSelectionRange(rule.selectionStart, rule.selectionEnd, rule.selectionDirection);
+                    
+                }, 1)
             };
         }, _blurListener: function _blurListener() {
             var masker = this;
@@ -218,7 +235,7 @@ var Masker = (function (modules) {
         }, bind: function bind(el) {
             var _ = this;
             el.addEventListener('focus', _.focusListener, false);
-            el.addEventListener('blur', _.blurListener, false);
+//            el.addEventListener('blur', _.blurListener, false);
             el.addEventListener('keydown', _.keydownListener, false);
         }, unbind: function unbind(el) {
             var _ = this;
