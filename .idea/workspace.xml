@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e564efe3-c48c-4ceb-b5b2-ed7ff3a9bd9c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/js/masker.js" afterPath="$PROJECT_DIR$/js/masker.js" />
-      <change beforePath="$PROJECT_DIR$/payment_page_files/66271719.css" afterPath="$PROJECT_DIR$/payment_page_files/66271719.css" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="masker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="masker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/masker.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="202" column="41" lean-forward="false" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
+              <caret line="202" column="45" lean-forward="true" selection-start-line="202" selection-start-column="45" selection-end-line="202" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="223" column="22" lean-forward="true" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -109,12 +118,12 @@
         <option value="$PROJECT_DIR$/js/yandex.js" />
         <option value="$PROJECT_DIR$/logo_crawler.php" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/payment_page.html" />
         <option value="$PROJECT_DIR$/payment_page_files/advantages.css" />
         <option value="$PROJECT_DIR$/payment_page_files/gibdd.css" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/js/masker.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -227,7 +236,7 @@
       <workItem from="1527066812645" duration="14765000" />
       <workItem from="1527090613381" duration="3639000" />
       <workItem from="1527170630749" duration="16662000" />
-      <workItem from="1527260258764" duration="235000" />
+      <workItem from="1527260258764" duration="1136000" />
     </task>
     <task id="LOCAL-00001" summary="Ready 2 test with gosoplata payment page">
       <created>1527245442684</created>
@@ -257,11 +266,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527260363134</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mask fix">
+      <created>1527261061962</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527261061962</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57031000" />
+    <option name="totallyTimeSpent" value="57932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="6" />
@@ -509,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="570" column="54" lean-forward="false" selection-start-line="570" selection-start-column="54" selection-end-line="570" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/payment_page_files/advantages.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
@@ -570,7 +579,15 @@
     <entry file="file://$PROJECT_DIR$/js/masker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="202" column="41" lean-forward="false" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
+          <caret line="202" column="45" lean-forward="true" selection-start-line="202" selection-start-column="45" selection-end-line="202" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="223" column="22" lean-forward="true" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
           <folding />
         </state>
       </provider>
