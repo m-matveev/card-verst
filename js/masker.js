@@ -191,12 +191,17 @@ var Masker = (function (modules) {
                 } else if (evt.metaKey || evt.ctrlKey || evt.keyCode === 9 || evt.keyCode === 13) {
                     return;
                 }
-                // else {
-                //     evt.preventDefault();
-                //     return;
-                // }
+                else {
+                    evt.preventDefault();
+                    return;
+                }
                 rule = masker.mask(val, start, end, true);
                 el.value = rule.text;
+
+                // safari fix
+                el.style.display = 'none';
+                el.style.display = 'box';
+
                 el.setSelectionRange(rule.selectionStart, rule.selectionEnd, rule.selectionDirection);
             };
         }, _blurListener: function _blurListener() {
@@ -218,7 +223,7 @@ var Masker = (function (modules) {
         }, bind: function bind(el) {
             var _ = this;
             el.addEventListener('focus', _.focusListener, false);
-            el.addEventListener('blur', _.blurListener, false);
+            // el.addEventListener('blur', _.blurListener, false);
             el.addEventListener('keydown', _.keydownListener, false);
         }, unbind: function unbind(el) {
             var _ = this;
