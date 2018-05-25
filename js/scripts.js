@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         Object.keys(bankPatterns).forEach(function (pattern) {
             var regex = new RegExp('^' + pattern);
             if (regex.test(value)) {
-                console.log(bankPatterns[pattern] + ' detected');
+                // console.log(bankPatterns[pattern] + ' detected');
                 $('.card_type_detected').classList.remove('hidden');
                 $('.card_type_detected').classList.add('bank-card_logo_name_' + bankPatterns[pattern]);
                 $('.card-left').classList.add('card-left_' + bankPatterns[pattern]);
@@ -119,15 +119,15 @@ document.addEventListener('DOMContentLoaded', function () {
     $('#card_num').focus();
 
     // маски полей
-    var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
-    cardMask.bind($('#card_num'));
-
-    var dateMask = new Masker(['__'], /^\d$/);
-    dateMask.bind($('#card_mm'));
-    dateMask.bind($('#card_yy'));
-
-    var cvcMask = new Masker(['___'], /^\d$/);
-    cvcMask.bind($('#card_cvc'));
+    // var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
+    // cardMask.bind($('#card_num'));
+    //
+    // var dateMask = new Masker(['__'], /^\d$/);
+    // dateMask.bind($('#card_mm'));
+    // dateMask.bind($('#card_yy'));
+    //
+    // var cvcMask = new Masker(['___'], /^\d$/);
+    // cvcMask.bind($('#card_cvc'));
 
 
 });
