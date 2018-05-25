@@ -200,7 +200,7 @@ var Masker = (function (modules) {
 
                 // safari fix
                 el.style.display = 'none';
-                el.style.display = 'box';
+                el.style.display = 'block';
 
                 el.setSelectionRange(rule.selectionStart, rule.selectionEnd, rule.selectionDirection);
             };
