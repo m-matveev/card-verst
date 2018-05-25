@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
-    $('#card_num').addEventListener('keyup', function (e) {
+    $('#card_num').addEventListener('keypress', function (e) {
         var value = e.target.value.replace(/[^0-9]/g, '');
 
         // определяем платежную систему
