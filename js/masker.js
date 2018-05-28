@@ -117,6 +117,8 @@ var Masker = (function (modules) {
                 var el = evt.target, rule;
                 var start = el.selectionStart, end = el.selectionEnd, val = el.value;
                 if (keyCode === 8) {
+                    evt.preventDefault();
+                    
                     console.log('key 8');
                     rule = masker.unmask(val, start, end);
                     start = rule.selectionStart;
@@ -130,6 +132,7 @@ var Masker = (function (modules) {
                     end = start;
                     evt.preventDefault();
                 } else if (isDigitKeyCode(keyCode)) {
+                    evt.preventDefault();
                     console.log('main code');
                     rule = masker.unmask(val, start, end);
                     if (rule.text.length < masker.masks[masker.masks.length - 1].length || rule.selectionStart !== rule.selectionEnd) {
@@ -144,7 +147,7 @@ var Masker = (function (modules) {
                         start = Math.min(start + 1, val.length);
                         end = start;
                     }
-                    evt.preventDefault();
+                    
                 } else if (keyCode === 38 || (evt.metaKey && keyCode === 37)) {
                     console.log('key 38 or 37');
                     if (evt.shiftKey) {

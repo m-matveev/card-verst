@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
-    
     // маски полей
     var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
     cardMask.bind($('#card_num'));
