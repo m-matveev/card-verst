@@ -22,9 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
-    var patternMask = new IMask($('#card_num'), {
-  mask: '0000 0000 0000 0000000'
-});
+     var phoneMask = ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+
+  // Assuming you have an input element in your HTML with the class .myInput
+  var myInput = $('#card_num')
+
+  var maskedInputController = vanillaTextMask.maskInput({
+    inputElement: myInput,
+    mask: phoneMask
+  })
+  
+//    var patternMask = new IMask($('#card_num'), {
+//  mask: '0000 0000 0000 0000000'
+//});
+    
     
 //    // маски полей
 //    var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
