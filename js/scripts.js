@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // перекидываем каретку на ГГ когда заполнен ММ
     $('#card_mm').addEventListener('keypress', function (e) {
+        console.log('card_mm keypress', e.target.value.length, getKeyCodeFromEvent(e), isDigitKeyCode(getKeyCodeFromEvent(e)));
         if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_yy').focus();
         }
