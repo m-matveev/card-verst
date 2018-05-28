@@ -113,7 +113,7 @@ var Masker = (function (modules) {
         }, _keydownListener: function _keydownListener() {
             var masker = this;
             return function EVENTS_KEYDOWN(evt) {
-                console.log(evt.key);
+                console.log(evt.key, evt);
                 var el = evt.target, rule;
                 var start = el.selectionStart, end = el.selectionEnd, val = el.value;
                 if (evt.keyCode === 8) {
@@ -234,7 +234,7 @@ var Masker = (function (modules) {
             var _ = this;
             el.addEventListener('focus', _.focusListener, false);
             // el.addEventListener('blur', _.blurListener, false);
-            el.addEventListener('keydown', _.keydownListener, false);
+            el.addEventListener('keyup', _.keydownListener, false);
         }, unbind: function unbind(el) {
             var _ = this;
             el.removeEventListener('focus', _.focusListener, false);
