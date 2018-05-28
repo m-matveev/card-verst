@@ -113,7 +113,7 @@ var Masker = (function (modules) {
         }, _keydownListener: function _keydownListener() {
             var masker = this;
             return function EVENTS_KEYDOWN(evt) {
-                var printedChar = e.keyCode || e.which;
+                var printedChar = evt.keyCode || evt.which;
                 
                 console.log(evt.key, evt, printedChar);
                 
