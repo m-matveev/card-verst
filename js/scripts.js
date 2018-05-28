@@ -9,11 +9,13 @@ var $ = function (el) {
 };
 
 function isDigitKeyCode(keyCode) {
-    return (keyCode >= 49 && keyCode <= 57)
+    // return (keyCode >= 49 && keyCode <= 57)
+    return true;
 }
 
 function getKeyCodeFromEvent(e) {
-    return e.keyCode || e.which;
+    return 45;
+    // return e.keyCode || e.which;
 }
 
 function cardChangeListener(e){
@@ -73,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // перекидываем каретку на ГГ когда заполнен ММ
     $('#card_mm').addEventListener('keyup', function (e) {
+        console.log(e.target, e.target.value.length);
         if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_yy').focus();
         }
