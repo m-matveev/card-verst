@@ -22,16 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
-    // маски полей
-    var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
-    cardMask.bind($('#card_num'));
-
-    var dateMask = new Masker(['__'], /^\d$/);
-    dateMask.bind($('#card_mm'));
-    dateMask.bind($('#card_yy'));
-
-    var cvcMask = new Masker(['___'], /^\d$/);
-    cvcMask.bind($('#card_cvc'));
+    var patternMask = new IMask($('#card_num'), {
+  mask: '0000 0000 0000 0000000'
+});
+    
+//    // маски полей
+//    var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
+//    cardMask.bind($('#card_num'));
+//
+//    var dateMask = new Masker(['__'], /^\d$/);
+//    dateMask.bind($('#card_mm'));
+//    dateMask.bind($('#card_yy'));
+//
+//    var cvcMask = new Masker(['___'], /^\d$/);
+//    cvcMask.bind($('#card_cvc'));
 
     
     $('#card_num').addEventListener('keyup', function (e) {

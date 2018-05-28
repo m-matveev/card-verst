@@ -237,7 +237,7 @@ var Masker = (function (modules) {
             var _ = this;
             el.addEventListener('focus', _.focusListener, false);
             // el.addEventListener('blur', _.blurListener, false);
-            el.addEventListener('keypress', _.keydownListener, false);
+            el.addEventListener('keyup', _.keydownListener, false);
         }, unbind: function unbind(el) {
             var _ = this;
             el.removeEventListener('focus', _.focusListener, false);
