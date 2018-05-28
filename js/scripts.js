@@ -71,14 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-//    $('#card_num').addEventListener('keyup', function (e) {
-//        cardChangeListener(e);
-//    });
-//    
-//    $('#card_num').addEventListener('change', function (e) {
-//        cardChangeListener(e);
-//    });
-
     // перекидываем каретку на ГГ когда заполнен ММ
     $('#card_mm').addEventListener('keyup', function (e) {
         if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
