@@ -16,38 +16,11 @@ function getKeyCodeFromEvent(e) {
     return e.keyCode || e.which;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    $('#payment_form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        $('#submit_btn').click();
-    });
-
-  
-    vanillaTextMask.maskInput({
-        inputElement: $('#card_num'),
-        guide: false,
-        mask: [/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/]
-    });
-    
-    vanillaTextMask.maskInput({
-        inputElement: $('#card_mm'),
-        guide: false,
-        mask: [/[0-9]/,/[0-9]/]
-    });
-  
-    vanillaTextMask.maskInput({
-        inputElement: $('#card_yy'),
-        guide: false,
-        mask: [/[0-9]/,/[0-9]/]
-    });
-    
-    $('#card_num').addEventListener('keyup', function (e) {
-        console.log('keyup card', e, e.target.value);
-        var value = e.target.value.replace(/[^0-9]/g, '');
+function cardChangeListener(e){
+    var value = e.target.value.replace(/[^0-9]/g, '');
 
         // определяем платежную систему
         Array.prototype.forEach.call($('.card_type_icon'), function(toHide) {
-//        $('.card_type_icon').forEach(function (toHide) {
             toHide.classList.remove('hidden');
             toHide.classList.remove('detected');
         });
@@ -84,11 +57,30 @@ document.addEventListener('DOMContentLoaded', function () {
         if ((value.length === 16 || value.length === 19) && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_mm').focus();
         }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    $('#payment_form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        $('#submit_btn').click();
     });
+    
+    ['keyup', 'change'].map(function(eName) {
+        $('#card_num').addEventListener(eName, function (e) {
+            cardChangeListener(e);
+        });
+    });
+
+//    $('#card_num').addEventListener('keyup', function (e) {
+//        cardChangeListener(e);
+//    });
+//    
+//    $('#card_num').addEventListener('change', function (e) {
+//        cardChangeListener(e);
+//    });
 
     // перекидываем каретку на ГГ когда заполнен ММ
     $('#card_mm').addEventListener('keyup', function (e) {
-        console.log('card_mm keyup', e.target.value.length, getKeyCodeFromEvent(e), isDigitKeyCode(getKeyCodeFromEvent(e)));
         if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_yy').focus();
         }
@@ -132,23 +124,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     Array.prototype.forEach.call($('input'), function(element) {
-//    $('input').forEach(function (element) {
         // клик на инпут, снятие класса ошибки и добавление класса подсветки
         element.addEventListener("focus", function (e) {
-            // console.log('input focus event', e);
             e.target.parentElement.parentElement.classList.remove('error');
             e.target.parentElement.parentElement.classList.add('active');
         });
 
         // снятие подсветки при потере фокуса
         element.addEventListener("blur", function (e) {
-            // console.log('input blur event', e);
             e.target.parentElement.parentElement.classList.remove('active');
         });
     });
 
     // фокус на номер карты
     $('#card_num').focus();
+        
+    vanillaTextMask.maskInput({
+        inputElement: $('#card_num'),
+        guide: false,
+        mask: [/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/]
+    });
+    
+    vanillaTextMask.maskInput({
+        inputElement: $('#card_mm'),
+        guide: false,
+        mask: [/[0-9]/,/[0-9]/]
+    });
+  
+    vanillaTextMask.maskInput({
+        inputElement: $('#card_yy'),
+        guide: false,
+        mask: [/[0-9]/,/[0-9]/]
+    });
+
 });
 
 /**
