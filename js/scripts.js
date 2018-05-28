@@ -8,6 +8,14 @@ var $ = function (el) {
     return elements;
 };
 
+function isDigitKeyCode(keyCode) {
+    return keyCode >= 49 && keyCode =< 57
+}
+
+function getKeyCodeFromEvent(e) {
+    return evt.keyCode || evt.which;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     $('#payment_form').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -15,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $('#card_num').addEventListener('keypress', function (e) {
+        console.log('keypress card', e, e.target.value);
         var value = e.target.value.replace(/[^0-9]/g, '');
 
         // определяем платежную систему
@@ -60,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // перекидываем каретку на ГГ когда заполнен ММ
     $('#card_mm').addEventListener('keypress', function (e) {
-        if (e.target.value.length === 2 && (new RegExp('[0-9]')).test(e.key)) {
+        if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_yy').focus();
         }
     });
