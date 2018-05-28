@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // перекидываем каретку на ММ/ГГ
-        if ((value.length === 16 || value.length === 19) && (new RegExp('[0-9]')).test(e.key)) {
+        if ((value.length === 16 || value.length === 19) && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_mm').focus();
         }
     });
@@ -77,14 +77,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // перекидываем каретку на CVC когда заполнен ГГ
     $('#card_yy').addEventListener('keyup', function (e) {
-        if (e.target.value.length === 2 && (new RegExp('[0-9]')).test(e.key)) {
+        if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e)) {
             $('#card_cvc').focus();
         }
     });
 
     // фокус на сабмит после cvc
     $('#card_cvc').addEventListener('keyup', function (e) {
-        if (e.target.value.length === 3 && (new RegExp('[0-9]')).test(e.key)) {
+        if (e.target.value.length === 3 && isDigitKeyCode(getKeyCodeFromEvent(e)) {
             $('#submit_btn').focus();
         }
     });
