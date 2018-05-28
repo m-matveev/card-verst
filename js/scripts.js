@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // отправка формы по нажатию enter
-    $('body').addEventListener('keypress', function (e) {
+    $('body').addEventListener('keyup', function (e) {
         var key = e.which || e.keyCode;
         if (key === 13 && e.target.id !== 'submit_btn') {
             $('#submit_btn').click();

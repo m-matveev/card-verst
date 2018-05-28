@@ -207,14 +207,12 @@ var Masker = (function (modules) {
                 }
                 rule = masker.mask(val, start, end, true);
                 el.value = rule.text;
-                // fix for safari
+
+                // safari fix
                 el.style.display = 'none';
-                el.style.display = 'block';
-                console.log(rule);
-                setTimeout(function(){
-                    el.setSelectionRange(rule.selectionStart, rule.selectionEnd, rule.selectionDirection);
-                    
-                }, 1)
+                el.style.display = 'initial';
+
+                el.setSelectionRange(rule.selectionStart, rule.selectionEnd, rule.selectionDirection);
             };
         }, _blurListener: function _blurListener() {
             var masker = this;
@@ -235,7 +233,7 @@ var Masker = (function (modules) {
         }, bind: function bind(el) {
             var _ = this;
             el.addEventListener('focus', _.focusListener, false);
-//            el.addEventListener('blur', _.blurListener, false);
+            // el.addEventListener('blur', _.blurListener, false);
             el.addEventListener('keydown', _.keydownListener, false);
         }, unbind: function unbind(el) {
             var _ = this;
