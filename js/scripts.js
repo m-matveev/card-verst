@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var value = e.target.value.replace(/[^0-9]/g, '');
 
         // определяем платежную систему
-        $('.card_type_icon').forEach(function (toHide) {
+        Array.prototype.forEach.call($('.card_type_icon'), function(toHide) {
+//        $('.card_type_icon').forEach(function (toHide) {
             toHide.classList.remove('hidden');
             toHide.classList.remove('detected');
         });
@@ -100,7 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    $('input').forEach(function (element) {
+    Array.prototype.forEach.call($('input'), function(element) {
+//    $('input').forEach(function (element) {
         // клик на инпут, снятие класса ошибки и добавление класса подсветки
         element.addEventListener("focus", function (e) {
             // console.log('input focus event', e);
