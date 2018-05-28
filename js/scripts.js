@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
     
-    ['keyup', 'change'].map(function(eName) {
+    ['keypress', 'change'].map(function(eName) {
         $('#card_num').addEventListener(eName, function (e) {
             cardChangeListener(e);
         });
