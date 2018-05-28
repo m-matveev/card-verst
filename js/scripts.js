@@ -77,14 +77,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // перекидываем каретку на CVC когда заполнен ГГ
     $('#card_yy').addEventListener('keyup', function (e) {
-        if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e)) {
+        if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_cvc').focus();
         }
     });
 
     // фокус на сабмит после cvc
     $('#card_cvc').addEventListener('keyup', function (e) {
-        if (e.target.value.length === 3 && isDigitKeyCode(getKeyCodeFromEvent(e)) {
+        if (e.target.value.length === 3 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#submit_btn').focus();
         }
     });
