@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
-    $('#card_num').addEventListener('keypress', function (e) {
-        console.log('keypress card', e, e.target.value);
+    $('#card_num').addEventListener('keyup', function (e) {
+        console.log('keyup card', e, e.target.value);
         var value = e.target.value.replace(/[^0-9]/g, '');
 
         // определяем платежную систему
@@ -76,21 +76,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // перекидываем каретку на CVC когда заполнен ГГ
-    $('#card_yy').addEventListener('keypress', function (e) {
+    $('#card_yy').addEventListener('keyup', function (e) {
         if (e.target.value.length === 2 && (new RegExp('[0-9]')).test(e.key)) {
             $('#card_cvc').focus();
         }
     });
 
     // фокус на сабмит после cvc
-    $('#card_cvc').addEventListener('keypress', function (e) {
+    $('#card_cvc').addEventListener('keyup', function (e) {
         if (e.target.value.length === 3 && (new RegExp('[0-9]')).test(e.key)) {
             $('#submit_btn').focus();
         }
     });
 
     // отправка формы по нажатию enter
-    $('body').addEventListener('keypress', function (e) {
+    $('body').addEventListener('keyup', function (e) {
         var key = e.which || e.keyCode;
         if (key === 13 && e.target.id !== 'submit_btn') {
             $('#submit_btn').click();
