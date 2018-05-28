@@ -9,7 +9,7 @@ var $ = function (el) {
 };
 
 function isDigitKeyCode(keyCode) {
-    return (keyCode => 49 && keyCode =< 57)
+    return (keyCode >= 49 && keyCode <= 57)
 }
 
 function getKeyCodeFromEvent(e) {
