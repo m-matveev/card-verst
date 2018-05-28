@@ -113,7 +113,10 @@ var Masker = (function (modules) {
         }, _keydownListener: function _keydownListener() {
             var masker = this;
             return function EVENTS_KEYDOWN(evt) {
-                console.log(evt.key, evt);
+                var printedChar = e.keyCode || e.which;
+                
+                console.log(evt.key, evt, printedChar);
+                
                 var el = evt.target, rule;
                 var start = el.selectionStart, end = el.selectionEnd, val = el.value;
                 if (evt.keyCode === 8) {
@@ -129,7 +132,7 @@ var Masker = (function (modules) {
                     val = val.slice(0, start) + val.slice(end);
                     end = start;
                     evt.preventDefault();
-                } else if (masker.filter(evt.key)) {
+                } else if (masker.filter(printedChar)) {
                     console.log('main code');
                     rule = masker.unmask(val, start, end);
                     if (rule.text.length < masker.masks[masker.masks.length - 1].length || rule.selectionStart !== rule.selectionEnd) {
