@@ -13,7 +13,7 @@ function isDigitKeyCode(keyCode) {
 }
 
 function getKeyCodeFromEvent(e) {
-    return evt.keyCode || evt.which;
+    return e.keyCode || e.which;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
