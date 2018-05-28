@@ -22,6 +22,19 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
+    
+    // маски полей
+    var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
+    cardMask.bind($('#card_num'));
+
+    var dateMask = new Masker(['__'], /^\d$/);
+    dateMask.bind($('#card_mm'));
+    dateMask.bind($('#card_yy'));
+
+    var cvcMask = new Masker(['___'], /^\d$/);
+    cvcMask.bind($('#card_cvc'));
+
+    
     $('#card_num').addEventListener('keyup', function (e) {
         console.log('keyup card', e, e.target.value);
         var value = e.target.value.replace(/[^0-9]/g, '');
@@ -130,19 +143,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // фокус на номер карты
     $('#card_num').focus();
-
-    // маски полей
-    var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
-    cardMask.bind($('#card_num'));
-
-    var dateMask = new Masker(['__'], /^\d$/);
-    dateMask.bind($('#card_mm'));
-    dateMask.bind($('#card_yy'));
-
-    var cvcMask = new Masker(['___'], /^\d$/);
-    cvcMask.bind($('#card_cvc'));
-
-
 });
 
 /**
