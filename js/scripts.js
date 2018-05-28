@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
             var regex = new RegExp(pattern);
             if (regex.test(value)) {
 
-                $('.card_type_icon').forEach(function (toHide) {
+                Array.prototype.forEach.call($('.card_type_icon'), function(toHide) {
+//                $('.card_type_icon').forEach(function (toHide) {
                     toHide.classList.add('hidden');
                 });
 
