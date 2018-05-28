@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     
     vanillaTextMask.maskInput({
-        inputElement: $('#card_num'),
+        inputElement: $('#card_mm'),
         guide: false,
         mask: [/[0-9]/,/[0-9]/]
     });
