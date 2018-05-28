@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var maskedInputController = vanillaTextMask.maskInput({
     inputElement: myInput,
-    mask: [/[0-9]{4}/, ' ', /[0-9]{4}/, /[0-9]{4}/, /[0-9]{4,7}/]
+    mask: [/[0-9]/, ' ', /[0-9]/, /[0-9]/, /[0-9]/]
   })
   
 //    var patternMask = new IMask($('#card_num'), {
