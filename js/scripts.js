@@ -22,27 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
-  vanillaTextMask.maskInput({
-    inputElement: $('#card_num'),
-    mask: [/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/]
-  })
   
-//    var patternMask = new IMask($('#card_num'), {
-//  mask: '0000 0000 0000 0000000'
-//});
+    vanillaTextMask.maskInput({
+        inputElement: $('#card_num'),
+        guide: false,
+        mask: [/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/]
+    });
     
-    
-//    // маски полей
-//    var cardMask = new Masker(['____ ____ ____ ____', '____ ____ ____ _______'], /^\d$/);
-//    cardMask.bind($('#card_num'));
-//
-//    var dateMask = new Masker(['__'], /^\d$/);
-//    dateMask.bind($('#card_mm'));
-//    dateMask.bind($('#card_yy'));
-//
-//    var cvcMask = new Masker(['___'], /^\d$/);
-//    cvcMask.bind($('#card_cvc'));
-
+    vanillaTextMask.maskInput({
+        inputElement: $('#card_num'),
+        guide: false,
+        mask: [/[0-9]/,/[0-9]/]
+    });
+  
+    vanillaTextMask.maskInput({
+        inputElement: $('#card_yy'),
+        guide: false,
+        mask: [/[0-9]/,/[0-9]/]
+    });
     
     $('#card_num').addEventListener('keyup', function (e) {
         console.log('keyup card', e, e.target.value);
