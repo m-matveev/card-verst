@@ -113,7 +113,7 @@ var Masker = (function (modules) {
         }, _keydownListener: function _keydownListener() {
             var masker = this;
             return function EVENTS_KEYDOWN(evt) {
-                console.log(evt);
+                console.log(evt.key);
                 var el = evt.target, rule;
                 var start = el.selectionStart, end = el.selectionEnd, val = el.value;
                 if (evt.keyCode === 8) {
