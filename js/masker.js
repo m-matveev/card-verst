@@ -113,13 +113,10 @@ var Masker = (function (modules) {
         }, _keydownListener: function _keydownListener() {
             var masker = this;
             return function EVENTS_KEYDOWN(evt) {
-                var printedChar = evt.keyCode || evt.which;
-                
-                console.log(evt.key, evt, printedChar);
-                
+                var keyCode = evt.keyCode || evt.which;
                 var el = evt.target, rule;
                 var start = el.selectionStart, end = el.selectionEnd, val = el.value;
-                if (evt.keyCode === 8) {
+                if (keyCode === 8) {
                     console.log('key 8');
                     rule = masker.unmask(val, start, end);
                     start = rule.selectionStart;
@@ -132,7 +129,7 @@ var Masker = (function (modules) {
                     val = val.slice(0, start) + val.slice(end);
                     end = start;
                     evt.preventDefault();
-                } else if (masker.filter(printedChar)) {
+                } else if (isDigitKeyCode(keyCode)) {
                     console.log('main code');
                     rule = masker.unmask(val, start, end);
                     if (rule.text.length < masker.masks[masker.masks.length - 1].length || rule.selectionStart !== rule.selectionEnd) {
@@ -148,7 +145,7 @@ var Masker = (function (modules) {
                         end = start;
                     }
                     evt.preventDefault();
-                } else if (evt.keyCode === 38 || (evt.metaKey && evt.keyCode === 37)) {
+                } else if (keyCode === 38 || (evt.metaKey && keyCode === 37)) {
                     console.log('key 38 or 37');
                     if (evt.shiftKey) {
                         return;
@@ -156,7 +153,7 @@ var Masker = (function (modules) {
                     start = 0;
                     end = start;
                     evt.preventDefault();
-                } else if (evt.keyCode === 40 || (evt.metaKey && evt.keyCode === 39)) {
+                } else if (keyCode === 40 || (evt.metaKey && keyCode === 39)) {
                     console.log('key 40 39');
                     if (evt.shiftKey) {
                         return;
@@ -164,7 +161,7 @@ var Masker = (function (modules) {
                     start = val.length;
                     end = start;
                     evt.preventDefault();
-                } else if (evt.keyCode === 37) {
+                } else if (keyCode === 37) {
                     console.log('key 37');
                     if (evt.shiftKey) {
                         return;
@@ -181,7 +178,7 @@ var Masker = (function (modules) {
                         end = start;
                     }
                     evt.preventDefault();
-                } else if (evt.keyCode === 39) {
+                } else if (keyCode === 39) {
                     console.log('key 39');
                     if (evt.shiftKey) {
                         return;
@@ -200,7 +197,7 @@ var Masker = (function (modules) {
                     evt.preventDefault();
                 } 
                 
-                else if (evt.metaKey || evt.ctrlKey || evt.keyCode === 9 || evt.keyCode === 13) {
+                else if (evt.metaKey || evt.ctrlKey || keyCode === 9 || keyCode === 13) {
                     console.log('key enter');
                     return true;
                 }
@@ -237,7 +234,7 @@ var Masker = (function (modules) {
             var _ = this;
             el.addEventListener('focus', _.focusListener, false);
             // el.addEventListener('blur', _.blurListener, false);
-            el.addEventListener('keypress', _.keydownListener, false);
+            el.addEventListener('keyup', _.keydownListener, false);
         }, unbind: function unbind(el) {
             var _ = this;
             el.removeEventListener('focus', _.focusListener, false);
