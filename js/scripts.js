@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         $('#submit_btn').click();
     });
-    
+
     ['keypress', 'change'].map(function(eName) {
         $('#card_num').addEventListener(eName, function (e) {
             cardChangeListener(e);
@@ -73,21 +73,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // перекидываем каретку на ГГ когда заполнен ММ
     $('#card_mm').addEventListener('keypress', function (e) {
-        if (e.target.value.length === 1 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
+        if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_yy').focus();
         }
     });
 
     // перекидываем каретку на CVC когда заполнен ГГ
     $('#card_yy').addEventListener('keypress', function (e) {
-        if (e.target.value.length === 1 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
+        if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_cvc').focus();
         }
     });
 
     // фокус на сабмит после cvc
     $('#card_cvc').addEventListener('keypress', function (e) {
-        if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
+        if (e.target.value.length === 3 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#submit_btn').focus();
         }
     });
@@ -130,19 +130,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // фокус на номер карты
     $('#card_num').focus();
-        
+
     vanillaTextMask.maskInput({
         inputElement: $('#card_num'),
         guide: false,
         mask: [/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/, ' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,' ', /[0-9]/, /[0-9]/, /[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/,/[0-9]/]
     });
-    
+
     vanillaTextMask.maskInput({
         inputElement: $('#card_mm'),
         guide: false,
         mask: [/[0-9]/,/[0-9]/]
     });
-  
+
     vanillaTextMask.maskInput({
         inputElement: $('#card_yy'),
         guide: false,
