@@ -65,35 +65,35 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#submit_btn').click();
     });
 
-    ['keypress', 'change'].map(function(eName) {
+    ['keyup', 'change'].map(function(eName) {
         $('#card_num').addEventListener(eName, function (e) {
             cardChangeListener(e);
         });
     });
 
     // перекидываем каретку на ГГ когда заполнен ММ
-    $('#card_mm').addEventListener('keypress', function (e) {
+    $('#card_mm').addEventListener('keyup', function (e) {
         if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_yy').focus();
         }
     });
 
     // перекидываем каретку на CVC когда заполнен ГГ
-    $('#card_yy').addEventListener('keypress', function (e) {
+    $('#card_yy').addEventListener('keyup', function (e) {
         if (e.target.value.length === 2 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#card_cvc').focus();
         }
     });
 
     // фокус на сабмит после cvc
-    $('#card_cvc').addEventListener('keypress', function (e) {
+    $('#card_cvc').addEventListener('keyup', function (e) {
         if (e.target.value.length === 3 && isDigitKeyCode(getKeyCodeFromEvent(e))) {
             $('#submit_btn').focus();
         }
     });
 
     // отправка формы по нажатию enter
-    $('body').addEventListener('keypress', function (e) {
+    $('body').addEventListener('keyup', function (e) {
         var key = e.which || e.keyCode;
         if (key === 13 && e.target.id !== 'submit_btn') {
             $('#submit_btn').click();
