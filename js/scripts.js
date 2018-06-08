@@ -1,4 +1,4 @@
-var $ = function (el) {
+var get = function (el) {
     var elements = document.querySelectorAll(el);
 
     if (elements.length === 1) {
@@ -19,12 +19,12 @@ function getKeyCodeFromEvent(e) {
 function cardChangeListener(e) {
     var value = e.target.value.replace(/[^0-9]/g, '');
 
-    var cardTypeIcons = $('.card_type_icon');
-    var cardLeftSide = $('.card-left');
+    var cardTypeIcons = get('.card_type_icon');
+    var cardLeftSide = get('.card-left');
 
     // перекидываем каретку на ММ/ГГ
     if (value.length === 16 || value.length === 19) {
-        $('#card_mm').focus();
+        get('#card_mm').focus();
     }
     
     // определяем платежную систему
@@ -41,14 +41,14 @@ function cardChangeListener(e) {
                 toHide.classList.add('hidden');
             });
 
-            var detectedEl = $('.card_type_' + paySysPatterns[pattern]);
+            var detectedEl = get('.card_type_' + paySysPatterns[pattern]);
             detectedEl.classList.remove('hidden');
             detectedEl.classList.add('detected');
         }
     });
 
     // определяем банк - эмитент
-    var detectedCardType = $('.card_type_detected');
+    var detectedCardType = get('.card_type_detected');
 
     detectedCardType.className = detectedCardType.className.replace(/bank-card_logo_name_(.*)/, '');
     cardLeftSide.className = cardLeftSide.className.replace(/card-left_(.*)/, '');
@@ -68,14 +68,14 @@ function cardChangeListener(e) {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    var cardNum = $('#card_num');
-    var cardYY = $('#card_yy');
-    var cardMM = $('#card_mm');
-    var cardCVC = $('#card_cvc');
+    var cardNum = get('#card_num');
+    var cardYY = get('#card_yy');
+    var cardMM = get('#card_mm');
+    var cardCVC = get('#card_cvc');
 
-    $('#payment_form').addEventListener('submit', function (e) {
+    get('#payment_form').addEventListener('submit', function (e) {
         e.preventDefault();
-        $('#submit_btn').click();
+        get('#submit_btn').click();
     });
 
     ['keyup', 'change'].map(function (eName) {
@@ -102,20 +102,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // фокус на сабмит после cvc
     cardCVC.addEventListener('keyup', function (e) {
         if (e.target.value.length === 3) {
-            $('#submit_btn').focus();
+            get('#submit_btn').focus();
         }
     });
 
     // отправка формы по нажатию enter
-    $('body').addEventListener('keyup', function (e) {
+    get('body').addEventListener('keyup', function (e) {
         var key = e.which || e.keyCode;
         if (key === 13 && e.target.id !== 'submit_btn') {
-            $('#submit_btn').click();
+            get('#submit_btn').click();
         }
     });
 
 
-    $('#submit_btn').addEventListener('click', function (e) {
+    get('#submit_btn').addEventListener('click', function (e) {
         // console.log('submit form function call, validate here', e);
 
         var num = cardNum.value.replace(/[^0-9]/g, '');
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    Array.prototype.forEach.call($('input'), function (element) {
+    Array.prototype.forEach.call(get('input'), function (element) {
         // клик на инпут, снятие класса ошибки и добавление класса подсветки
         element.addEventListener("focus", function (e) {
             e.target.parentElement.parentElement.classList.remove('error');
@@ -176,27 +176,27 @@ document.addEventListener('DOMContentLoaded', function () {
 function totalCheck(num, month, year, cvv) {
     /* card num check */
     if (!(num.length >= 16 && num.length <= 19 && luhnChk(num))) {
-        $('.card-number').classList.add('error');
+        get('.card-number').classList.add('error');
     }
 
     /* until check */
     if (!(month.length === 2 && month <= 12)) {
-        $('.card-valid').classList.add('error');
+        get('.card-valid').classList.add('error');
     }
 
     var today = new Date();
     var until = new Date("20" + year, month);
 
     if (!(month.length === 2 && month <= 12 && year.length === 2 && (until.valueOf() - today.valueOf()) > 0)) {
-        $('.card-valid').classList.add('error');
+        get('.card-valid').classList.add('error');
     }
 
     /** cvv check **/
     if (cvv.length !== 3) {
-        $('.card-cvc').classList.add('error');
+        get('.card-cvc').classList.add('error');
     }
 
-    return $('.error').length === 0;
+    return get('.error').length === 0;
 }
 
 /**
@@ -223,7 +223,7 @@ function luhnChk(luhn) {
  * @param link
  */
 function setLinkToOferta(link) {
-    $('#linkToOferta').href = link;
+    get('#linkToOferta').href = link;
 }
 
 var paySysPatterns = {

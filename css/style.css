@@ -69,10 +69,10 @@ body, * {
 }
 
 /** иконки платежных систем **/
-.card_type_icon.card_type_mir {background-image: url(../../svg/mir.svg)}
-.card_type_icon.card_type_visa {background-image: url(../../svg/visa.svg)}
-.card_type_icon.card_type_maestro {background-image: url(../../svg/maestro.svg)}
-.card_type_icon.card_type_mastercard {background-image: url(../../svg/mastercard.svg)}
+.card_type_icon.card_type_mir {background-image: url(../svg/mir.svg)}
+.card_type_icon.card_type_visa {background-image: url(../svg/visa.svg)}
+.card_type_icon.card_type_maestro {background-image: url(../svg/maestro.svg)}
+.card_type_icon.card_type_mastercard {background-image: url(../svg/mastercard.svg)}
 
 /** позоции иконок платежных систем **/
 .card_type_icon:nth-child(2) {
