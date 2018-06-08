@@ -16,6 +16,36 @@ function getKeyCodeFromEvent(e) {
     return e.keyCode || e.which;
 }
 
+function sendForm(number, month, year, cvv, owner, phone, email) {
+    if (typeof(owner) === 'undefined') owner = 'CARD OWNER';
+    if (number.match(/^[0-9]*$/) === null) return 'invalid number';
+    if (month.match(/^[0-9]{2}$/) === null) return 'invalid month';
+    if (year.match(/^[0-9]{2}$/) === null) return 'invalid year';
+    if (cvv.match(/^[0-9]*$/) === null) return 'invalid cvv';
+
+    var form = get('#payment_form');
+
+    var formParams = [
+        ['javascriptEnabled', 'true'],
+        ['additionalParameters.cardNumber', number],
+        ['additionalParameters.cardExpiration', month],
+        ['additionalParameters.cardExpiration', '20' + year],
+        ['additionalParameters.cardCVV2', cvv],
+        ['ownerLogin', '']
+    ];
+
+    formParams.forEach(function (item, index) {
+        var input = document.createElement("input");
+        input.name = item[0];
+        input.value = item[1];
+        input.type = 'hidden';
+        form.appendChild(input);
+    });
+
+    form.submit();
+}
+
+
 function cardChangeListener(e) {
     var value = e.target.value.replace(/[^0-9]/g, '');
 
@@ -26,7 +56,7 @@ function cardChangeListener(e) {
     if (value.length === 16 || value.length === 19) {
         get('#card_mm').focus();
     }
-    
+
     // определяем платежную систему
     Array.prototype.forEach.call(cardTypeIcons, function (toHide) {
         toHide.classList.remove('hidden');
