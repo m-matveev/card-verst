@@ -1,0 +1,445 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    margin : 0;
+    padding : 0;
+    background:#f5f6f7;
+    font-family:Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #646464;
+}
+
+form {
+    margin : 0;
+    padding : 0;
+}
+
+input,select{
+    color : #000000;
+    text-decoration : none;
+}
+
+a:link, a:visited, a:active{
+    color: #ee1c50;
+    text-decoration:underline;
+}
+
+a:hover{text-decoration : none;}
+
+div#wrap {
+    width:680px;
+    margin:30px auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #BBBBBB;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+div#logo {
+    padding: 1em;
+}
+
+
+div.fixed_header {
+    border-top: 5px solid #ba264a;
+
+    color:#fff;
+    font-weight:bold;
+    line-height:54px;
+    height:54px;
+    padding:0 20px;
+    position:relative;
+    margin-bottom: 10px;
+
+    background: #e84770; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e84770 0%, #ef4270 1%, #f0406f 5%, #ed406e 7%, #ed3f70 11%, #df3864 34%, #d2315b 64%, #ce2f57 66%, #c72850 88%, #c22a51 89%, #c0284f 91%, #c4284f 92%, #c3274e 93%, #bd284e 96%, #c1254d 97%, #bd274c 99%, #9f344e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e84770), color-stop(1%,#ef4270), color-stop(5%,#f0406f), color-stop(7%,#ed406e), color-stop(11%,#ed3f70), color-stop(34%,#df3864), color-stop(64%,#d2315b), color-stop(66%,#ce2f57), color-stop(88%,#c72850), color-stop(89%,#c22a51), color-stop(91%,#c0284f), color-stop(92%,#c4284f), color-stop(93%,#c3274e), color-stop(96%,#bd284e), color-stop(97%,#c1254d), color-stop(99%,#bd274c), color-stop(100%,#9f344e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e84770 0%,#ef4270 1%,#f0406f 5%,#ed406e 7%,#ed3f70 11%,#df3864 34%,#d2315b 64%,#ce2f57 66%,#c72850 88%,#c22a51 89%,#c0284f 91%,#c4284f 92%,#c3274e 93%,#bd284e 96%,#c1254d 97%,#bd274c 99%,#9f344e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e84770 0%,#ef4270 1%,#f0406f 5%,#ed406e 7%,#ed3f70 11%,#df3864 34%,#d2315b 64%,#ce2f57 66%,#c72850 88%,#c22a51 89%,#c0284f 91%,#c4284f 92%,#c3274e 93%,#bd284e 96%,#c1254d 97%,#bd274c 99%,#9f344e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e84770 0%,#ef4270 1%,#f0406f 5%,#ed406e 7%,#ed3f70 11%,#df3864 34%,#d2315b 64%,#ce2f57 66%,#c72850 88%,#c22a51 89%,#c0284f 91%,#c4284f 92%,#c3274e 93%,#bd284e 96%,#c1254d 97%,#bd274c 99%,#9f344e 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e84770 0%,#ef4270 1%,#f0406f 5%,#ed406e 7%,#ed3f70 11%,#df3864 34%,#d2315b 64%,#ce2f57 66%,#c72850 88%,#c22a51 89%,#c0284f 91%,#c4284f 92%,#c3274e 93%,#bd284e 96%,#c1254d 97%,#bd274c 99%,#9f344e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e84770', endColorstr='#9f344e',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+div#service-name {
+    font-size: 25px;
+    font-weight:normal;
+    color:#444444;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+div#amount {
+    float: right;
+    padding-top: 25px;
+    padding-right: 25px;
+
+    color:#ee1c50;
+    font-size: 25px;
+    text-align:right;
+    line-height:42px;
+}
+
+div#order-comment {
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+div#order-title {
+    padding-left: 25px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+div#order-id {
+    padding-left: 5px;
+    float: left;
+}
+
+div.wrapped-text {
+    padding-left: 25px;
+}
+
+div#action {
+    border-top: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2;
+
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ebedef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebedef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ebedef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#ebedef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ebedef 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#ebedef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebedef',GradientType=0 ); /* IE6-9 */
+
+    color:#444444;
+    font-weight:bold;
+    line-height:31px;
+    clear:both;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+
+}
+
+form#payment-form input, form#payment-form textarea, form#payment-form select
+{
+    margin: 0.2em 0 0.5em 0;
+}
+
+form#payment-form fieldset
+{
+    border: 1px solid #DDD;
+    padding: 10px;
+    margin: 0 0 5px 0;
+    -moz-border-radius:7px;
+}
+
+form#payment-form label
+{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 30px;
+}
+
+form#payment-form .row
+{
+    margin: 5px 0;
+}
+
+form#payment-form .hint
+{
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+form#payment-form .note
+{
+    font-style: italic;
+}
+
+form#payment-form span.required
+{
+    color: red;
+}
+
+form#payment-form div.error label:first-child,
+form#payment-form label.error,
+form#payment-form span.error
+{
+    color: #C00;
+}
+
+form#payment-form div.error input,
+form#payment-form div.error textarea,
+form#payment-form div.error select,
+form#payment-form input.error,
+form#payment-form textarea.error,
+form#payment-form select.error
+{
+    background: #FEE;
+    border-color: #C00;
+}
+
+form#payment-form div.success input,
+form#payment-form div.success textarea,
+form#payment-form div.success select,
+form#payment-form input.success,
+form#payment-form textarea.success,
+form#payment-form select.success
+{
+    background: #E6EFC2;
+    border-color: #C6D880;
+}
+
+form#payment-form .errorSummary
+{
+    border: 2px solid #C00;
+    padding: 7px 7px 25px;
+    margin: 10px;
+    background: #FEE;
+    font-size: 0.9em;
+}
+
+form#payment-form .errorMessage
+{
+    color: red;
+    font-size: 0.9em;
+    padding-left: 30px;
+}
+
+form#payment-form .errorSummary p
+{
+    margin: 0;
+    padding: 5px;
+}
+
+form#payment-form .errorSummary ul
+{
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+div.https_disclaimer {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background: #DDDDDD;
+    padding: 10px 25px;
+    border-top: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2;
+    font-size: 75%;
+}
+
+div#payment-form-submit {
+    float: right;
+    padding-right: 25px;
+}
+
+div#back-button-block {
+    float: right;
+    padding-right: 25px;
+}
+
+div#pci-logo {
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+div#footer {
+    width:680px;
+    margin:30px auto;
+}
+
+div#copyright {
+    display: inline-block;
+}
+
+div#help {
+    float: right;
+    text-align: right;
+}
+
+div#sender{
+    background: url('CardSgr.png');
+    height: 175px;
+    width: 308px;
+    vertical-align: top;
+    display: inline-block;
+    color: #000000;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+div#senderPANLabel{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+div#senderPANEdit{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+div#senderPANEdit input{
+    font-size: 18px;
+    font-weight:bold;
+}
+
+div#senderPANErrorMessage{
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #d04736;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+/*
+    top: 245px;
+*/
+    top: 270px;
+}
+
+div#senderExpDLabel{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+div#senderExpDSelect{
+    display: inline-block;
+}
+
+div#reciver{
+    background: url('CardRgr.png');
+    height: 175px;
+    width: 282px;
+    vertical-align: top;
+    display: inline-block;
+    color: #000000;
+    font-weight:normal;
+    margin-top: 10px;
+    margin-left: 85px;
+}
+
+div#reciverPANLabel{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+div#reciverPANEdit{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+div#reciverPANEdit input{
+    font-size: 18px;
+    font-weight:bold;
+}
+
+div#reciverPANErrorMessage{
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #d04736;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+/*
+    top: 245px;
+*/
+    top: 270px;
+}
+
+div#cvvLabel{
+    margin-left: 10px;
+    margin-top: -5px;
+    display: inline-block;
+    color: #000000;
+    font-weight: normal;
+
+}
+div#cvvEdit{
+    margin-left: 10px;
+    margin-top: 7px;
+    display: inline-block;
+}
+div#cvvEdit input{
+    font-size: 18px;
+    font-weight:bold;
+}
+
+div#cvvError{
+    color: #d04736;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    top: 375px;
+}
+
+div#amountTransfer {
+/*
+    float: right;
+    padding-top: 25px;
+    padding-right: 25px;
+
+    color:#ee1c50;
+    font-size: 25px;
+    text-align:right;
+    line-height:42px;
+*/
+}
+
+div#amountTransfer input{
+    font-size: 18px;
+    font-weight:bold;
+}
+div#amountTransfer select{
+    font-size: 18px;
+    font-weight:bold;
+}
+div#amountTransferLabel{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #000000;
+    font-weight: italic;
+}
+
+div#acceptMsg{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: normal;
+    font-size: 12px;
+}
+div#acceptMsg a:active {
+    color: #000000;
+    text-decoration: underline;
+}
+
+div#additional_cost {
+    margin-top: 10px;
+    color: #000000;
+    font-size: 15px;
+    text-align: right;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+h23 { /* Some titles? payTransfer, etc */
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: block;
+    font-family: PT Sans;
+    font-size: 28px;
+    /*color: #ffffff;*/
+    text-align: left;
+}
+
+.loader {
+    background: url("ajax-loader.gif") no-repeat 50px;
+}

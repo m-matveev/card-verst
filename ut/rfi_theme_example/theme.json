@@ -1,0 +1,66 @@
+{
+    "name": "rfi_default",
+    "cssFiles": [ "styles.css" ],
+    "jsFiles" : [ "scripts.js" ],
+    "languageSwitcherStyle": "dropdown",
+    "cvcRcSwitcherStyle": null,
+    "formOptionalInputs": [ "email", "phone" ],
+    "layout": [ "page",
+                [ "wrap",
+                  [ "logo_and_pci", "LOGO", "LANGUAGE" ],
+                  [ "order", "fixed_header.fixed_header", "AMOUNT", "SERVICE_NAME", "ORDER_COMMENT", "order-title","ORDER_ID" ],
+                  "action",
+                  "FORM",
+                  "HTTPS_DISCLAIMER",
+                  "PCI_LOGO"
+                ],
+                [ "footer",
+                  "copyright",
+                  "help"
+                ]
+              ],
+    "payTransferLayout": [ "page",
+                [ "wrap",
+                  [ "logo_and_pci",
+                    "LOGO", "LANGUAGE" ],
+                  "title_transfer",
+                  "PAYTRANSFER_FORM",
+                  "HTTPS_DISCLAIMER",
+                  "PCI_LOGO"
+                ],
+                [ "footer",
+                  "copyright",
+                  "help"
+                ]
+              ],
+    "successLayout": [ "page",
+                       [ "wrap",
+                         [ "logo_and_pci", "LOGO", "LANGUAGE" ],
+                         "SUCCESS",
+                         "PCI_LOGO"
+                       ],
+                        [ "footer",
+                          "copyright",
+                          "help"
+                        ]
+                     ],
+    "errorLayout": [ "page",
+                     [ "wrap",
+                       [ "logo_and_pci", "LOGO", "LANGUAGE" ],
+                       "ERROR",
+                       "PCI_LOGO"
+                     ],
+                        [ "footer",
+                          "copyright",
+                          "help"
+                        ]
+                   ],
+    "fragments": {
+        "order-title": "Заказ №",
+        "copyright": "<p><a href='http://rficb.ru/' target='_blank'>RFI BANK</a> © 2015</p>",
+        "help": "<a href='http://wiki.rficb.ru/doku.php?id=a1lite_cards_bm' target='_blank'>Помощь (нelp)</a><BR> <a href='http://rficb.ru/about/information/contacts.php' target='_blank'>Служба поддержки (support)</a>",
+        "fixed_header": "<strong>Информация о заказе</strong>",
+        "action": "Введите данные банковской карты:",
+        "title_transfer": "<h23>Перевод с карты на карту</h23>"
+    }
+}
