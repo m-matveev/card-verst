@@ -2,17 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564efe3-c48c-4ceb-b5b2-ed7ff3a9bd9c" name="Default" comment="change to keyup">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/mask.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/scripts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/theme.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/akbars.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/alfabank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/avangard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/az-to-bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/baltinvestbank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/bank-moskvi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/binbank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/center-invest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/citibank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/crediteuropebank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/expobank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/express-bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/finservice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/fnp-bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/gasprom.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/globex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/homecredit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/intercommerz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/inteza.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/jugra.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/leto-bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/maestro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/maestro_white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/mastercard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/mastercard_white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/mdm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/mfk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/mib.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/mir.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/moscredbank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/mts-bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/novikombank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/openrocket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/otkritie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/probusiness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/promsvyazbank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/raiffeisen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/rgs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/rocketbank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/rosbank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/rossiya.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/rsb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/russtandart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/sberbank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/skb-bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/smp-bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/soyuz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/spb-bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/tatfondbank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/tinkoff.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/transcapital.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/unicredit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/vbrr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/visa-qiwi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/visa_white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/vneshprombank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/vtb24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/ym-normal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/ym.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ut/rfi_gibdd/svg/zenit.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/card-verst.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ut/rfi_gibdd/mask.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ut/rfi_gibdd/js/mask.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ut/rfi_gibdd/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/ut/rfi_gibdd/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ut/rfi_gibdd/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ut/rfi_gibdd/js/scripts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ut/rfi_gibdd/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ut/rfi_gibdd/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ut/rfi_gibdd/theme.json" beforeDir="false" afterPath="$PROJECT_DIR$/ut/rfi_gibdd/theme.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,35 +84,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/reset.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="style.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/style.min.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="theme.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/theme.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ut/rfi_theme_example/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mask.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/mask.min.js">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="theme.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/theme.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="787">
+              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/scripts.min.js">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="2529">
+              <caret line="132" column="48" selection-start-line="132" selection-start-column="48" selection-end-line="132" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -69,9 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.js</find>
-      <find>svg/</find>
-      <find>.bank-card2__logo_name</find>
       <find>citibank</find>
       <find>card_type_detected</find>
       <find>.bank-card2__front_theme_</find>
@@ -99,6 +152,9 @@
       <find>../fonts/</find>
       <find>value.length</find>
       <find>keyup</find>
+      <find>order-title&quot;</find>
+      <find>ACQUIRE_TRIGGER</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>card_type</replace>
@@ -112,6 +168,7 @@
       <replace>sprite@2x.png</replace>
       <replace>fonts/</replace>
       <replace>keypress</replace>
+      <replace>'</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/payment_page_files</dir>
@@ -145,6 +202,7 @@
         <option value="$PROJECT_DIR$/js/scripts.min.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ut/rfi_gibdd/theme.json" />
+        <option value="$PROJECT_DIR$/ut/rfi_gibdd/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -174,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,41 +247,13 @@
             <path>
               <item name="card-verst" type="b2602c69:ProjectViewProjectNode" />
               <item name="card-verst" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="style.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="card-verst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="card-verst" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="card-verst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="card-verst" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="card-verst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="card-verst" type="462c0819:PsiDirectoryNode" />
-              <item name="ut" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="card-verst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="card-verst" type="462c0819:PsiDirectoryNode" />
-              <item name="ut" type="462c0819:PsiDirectoryNode" />
-              <item name="rfi_gibdd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="card-verst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="card-verst" type="462c0819:PsiDirectoryNode" />
-              <item name="ut" type="462c0819:PsiDirectoryNode" />
-              <item name="rfi_theme_example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +265,12 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///var/www/card-verst/index.html" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ut/rfi_gibdd/js" />
+      <recent name="$PROJECT_DIR$/ut/rfi_gibdd/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ut/rfi_gibdd/js" />
       <recent name="$PROJECT_DIR$/ut/rfi_gibdd" />
       <recent name="$PROJECT_DIR$/payment_page_files" />
     </key>
@@ -280,6 +314,7 @@
       <workItem from="1527260258764" duration="5492000" />
       <workItem from="1527518816800" duration="1767000" />
       <workItem from="1532262481325" duration="1451000" />
+      <workItem from="1532265501777" duration="6030000" />
     </task>
     <task id="LOCAL-00001" summary="Ready 2 test with gosoplata payment page">
       <created>1527245442684</created>
@@ -327,22 +362,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65506000" />
+    <option name="totallyTimeSpent" value="71536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Migrations" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Migrations" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.7722372" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26126125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26512226" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962063" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
@@ -352,24 +387,23 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24962063" />
       <window_info id="Structure" order="2" weight="0.24962063" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -377,6 +411,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -404,22 +464,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style_ya.css" />
-    <entry file="file://$PROJECT_DIR$/css/style_ya2.css" />
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4140">
-          <caret line="230" column="20" selection-start-line="230" selection-start-column="20" selection-end-line="230" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style_ya2.css" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -465,13 +509,7 @@
     <entry file="file://$PROJECT_DIR$/svg/rgs.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gosoplata/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../gosoplata/web/index.php" />
     <entry file="file://$PROJECT_DIR$/svg/maestro_white.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -515,51 +553,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/masker.js" />
-    <entry file="file://$PROJECT_DIR$/js/scripts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="107" selection-start-column="107" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/success.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/theme.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/README.md" />
+    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/success.png" />
+    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/theme.json" />
+    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/style.css" />
+    <entry file="file://$PROJECT_DIR$/rfi-p2p-adaptive-master/rfi-p2p-adaptive/script.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -574,17 +572,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ut/rfi_theme_adaptive/theme.json">
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="306">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/css/style.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/js/mask.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/js/scripts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/svg/ym.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_theme_example/theme.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="56" column="21" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="107" selection-start-column="107" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="70" selection-start-line="7" selection-end-line="8" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ut/rfi_theme_adaptive/page_modifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="-233">
           <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_theme_adaptive/theme.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_theme_adaptive/theme.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" selection-start-line="17" selection-end-line="37" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -596,36 +658,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/reset.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/style.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/mask.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/scripts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/theme.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="787">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ut/rfi_gibdd/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2529">
+          <caret line="132" column="48" selection-start-line="132" selection-start-column="48" selection-end-line="132" selection-end-column="48" />
         </state>
       </provider>
     </entry>
