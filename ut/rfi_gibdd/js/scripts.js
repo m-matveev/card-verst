@@ -145,6 +145,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (totalCheck(num, month, year, cvv)) {
             window.parent.postMessage('valid_card_filled', '*');
+            ['left-side-root', 'right-side-root', 'el', 'const-submit-btn', 'markers'].forEach(function (elementId) {
+                get('#' + elementId).classList.add('hidden');
+            });
+            get('#loader').classList.remove('hidden');
             get('#payment_form').submit();
         }
     }

