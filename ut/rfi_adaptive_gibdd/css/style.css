@@ -3,6 +3,10 @@ body, * {
     font-size: 11px
 }
 
+#payment-form-block {
+    display: none;
+}
+
 /** Враппер блока с картами **/
 .card-wrapper {
     width: 460px;

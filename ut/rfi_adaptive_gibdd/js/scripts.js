@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // отправка формы любым другим способом
-    get('#payment_form').addEventListener('submit', function (e) {
+    get('#payment-form').addEventListener('submit', function (e) {
         e.preventDefault();
         formSubmitHandler();
     });
@@ -149,7 +149,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 get('#' + elementId).classList.add('hidden');
             });
             get('#loader').classList.remove('hidden');
-            get('#payment_form').submit();
+
+            $('#PayForm_card').val(num);
+            $('#PayForm_exp_month').val(month);
+            $('#PayForm_exp_year').val(year);
+            $('#PayForm_cvc2').val(cvv);
+            $('#payment-form').submit();
         }
     }
 
@@ -197,8 +202,9 @@ function totalCheck(num, month, year, cvv) {
 
     var today = new Date();
     var until = new Date("20" + year, month);
+    var lastPossibleYear = parseInt($('#PayForm_exp_year > option:last').attr('value'));
 
-    if (!(month.length === 2 && month <= 12 && year.length === 2 && (until.valueOf() - today.valueOf()) > 0)) {
+    if (!(month.length === 2 && month <= 12 && year.length === 2 && year <= lastPossibleYear && (until.valueOf() - today.valueOf()) > 0)) {
         get('.card-valid').classList.add('error');
     }
 
