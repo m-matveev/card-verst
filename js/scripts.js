@@ -8,14 +8,6 @@ var get = function (el) {
     return elements;
 };
 
-function isDigitKeyCode(keyCode) {
-    return (keyCode >= 49 && keyCode <= 57);
-}
-
-function getKeyCodeFromEvent(e) {
-    return e.keyCode || e.which;
-}
-
 function cardChangeListener(e) {
     var value = e.target.value.replace(/[^0-9]/g, '');
 
@@ -216,14 +208,6 @@ function luhnChk(luhn) {
     }
 
     return sum % 10 === 0 && sum > 0;
-};
-
-/**
- * Установка ссылки на оферту
- * @param link
- */
-function setLinkToOferta(link) {
-    get('#linkToOferta').href = link;
 }
 
 var paySysPatterns = {
