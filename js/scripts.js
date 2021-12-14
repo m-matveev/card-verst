@@ -60,7 +60,7 @@ function cardChangeListener(e) {
 
 }
 
-document.addEventListener('unload', () => {
+window.addEventListener('unload', () => {
     window.top.postMessage({
         msg: 'setHeight',
         height: 660
