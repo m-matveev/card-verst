@@ -1,5 +1,3 @@
-
-
 var get = function (el) {
     var elements = document.querySelectorAll(el);
 
@@ -9,6 +7,44 @@ var get = function (el) {
 
     return elements;
 };
+
+function isDigitKeyCode(keyCode) {
+    return (keyCode >= 49 && keyCode <= 57);
+}
+
+function getKeyCodeFromEvent(e) {
+    return e.keyCode || e.which;
+}
+
+function sendForm(number, month, year, cvv, owner, phone, email) {
+    if (typeof(owner) === 'undefined') owner = 'CARD OWNER';
+    if (number.match(/^[0-9]*$/) === null) return 'invalid number';
+    if (month.match(/^[0-9]{2}$/) === null) return 'invalid month';
+    if (year.match(/^[0-9]{2}$/) === null) return 'invalid year';
+    if (cvv.match(/^[0-9]*$/) === null) return 'invalid cvv';
+
+    var form = get('#payment_form');
+
+    var formParams = [
+        ['javascriptEnabled', 'true'],
+        ['additionalParameters.cardNumber', number],
+        ['additionalParameters.cardExpiration', month],
+        ['additionalParameters.cardExpiration', '20' + year],
+        ['additionalParameters.cardCVV2', cvv],
+        ['ownerLogin', '']
+    ];
+
+    formParams.forEach(function (item, index) {
+        var input = document.createElement("input");
+        input.name = item[0];
+        input.value = item[1];
+        input.type = 'hidden';
+        form.appendChild(input);
+    });
+
+    form.submit();
+}
+
 
 function cardChangeListener(e) {
     var value = e.target.value.replace(/[^0-9]/g, '');
@@ -220,6 +256,14 @@ function luhnChk(luhn) {
     }
 
     return sum % 10 === 0 && sum > 0;
+}
+
+/**
+ * Установка ссылки на оферту
+ * @param link
+ */
+function setLinkToOferta(link) {
+    get('#linkToOferta').href = link;
 }
 
 var paySysPatterns = {
