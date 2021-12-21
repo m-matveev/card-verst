@@ -26,6 +26,7 @@ function sendForm(number, month, year, cvv, owner, phone, email) {
     var form = get('#payment_form');
 
     var formParams = [
+        ['_do_next', 'true'],
         ['javascriptEnabled', 'true'],
         ['additionalParameters.cardNumber', number],
         ['additionalParameters.cardExpiration', month],
