@@ -222,6 +222,14 @@ function luhnChk(luhn) {
     return sum % 10 === 0 && sum > 0;
 }
 
+/**
+ * Установка ссылки на оферту
+ * @param link
+ */
+function setLinkToOferta(link) {
+    get('#linkToOferta').href = link;
+}
+
 var paySysPatterns = {
     '^2': "mir",
     '^4': "visa",
