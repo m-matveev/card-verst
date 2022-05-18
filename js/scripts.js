@@ -97,13 +97,6 @@ function cardChangeListener(e) {
 
 }
 
-window.addEventListener('unload', () => {
-    window.top.postMessage({
-        msg: 'setHeight',
-        height: 660
-    }, '*');
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     var cardNum = get('#card_num');
     var cardYY = get('#card_yy');
@@ -161,6 +154,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var cvv = cardCVC.value.replace(/[^0-9]/g, '');
 
         if (totalCheck(num, month, year, cvv)) {
+            window.top.postMessage({
+                msg: 'setHeight',
+                height: 660
+            }, '*');
             window.parent.postMessage('valid_card_filled', '*');
             sendForm(num, month, year, cvv);
         }
